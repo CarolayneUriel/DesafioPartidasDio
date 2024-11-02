@@ -1,23 +1,23 @@
 function calcularRank(vitorias, derrotas){
-    let saldoRankeadas = vitorias - derrotas
+    let saldoRanqueadas = vitorias - derrotas
     let nivel
 
-    if (saldoRankeadas <= 10) {
+    if(saldoRanquedas <= 10) {
         nivel = "Ferro"
-    } else if (saldoRankeadas <= 20) {
+    } else if(saldoRanqueadas <= 20) {
         nivel = "Bronze"
-    } else if (saldoRankeadas <= 50) {
+    } else if(saldoRanqueadas <= 50) {
         nivel = "Prata"
-    } else if (saldoRankeadas <= 80) {
+    } else if(saldoRanqueadas <= 80) {
         nivel = "Ouro"
-    } else if (saldoRankeadas <= 90) {
+    } else if(saldoRanqueadas <= 90) {
         nivel = "Diamante"
-    } else if (saldoRankeadas <= 100) {
+    } else if(saldoRanqueadas <= 100) {
         nivel = "Lendário"
     } else {
         nivel = "Imortal"
     }
-    return `O Herói tem de saldo de ${saldoRankeadas} e está no nível de ${nivel}`
+    return `O Herói tem de saldo de $ {saldoRanqueadas} e está no nível de ${nivel}`
 }
 
 let resultado = calcularRank(110, 5)
